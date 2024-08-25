@@ -200,7 +200,7 @@ function App() {
       setIsSubmitted(false); // Reset submission status before submitting
       const parsedInput = JSON.parse(jsonInput);
       const response = await axios.post(
-        "http://localhost:5000/bfhl",
+        "https://bj-backend.onrender.com/bfhl",
         parsedInput
       );
       setResponseData(response.data);
